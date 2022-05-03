@@ -656,8 +656,49 @@ const[placeOfBirth,setPlaceOfBirth] = useState("");
 											Group B
 										</label>
 									</div>
+                  <div class="col-sm-2">
+										<label class="radio-inline">
+											<input name="group" type="radio" id="CRadio" value="3"
+                      />
+
+										Group C
+										</label>
+									</div>
+                  <div class="col-sm-2">
+										<label class="radio-inline">
+											<input name="group" type="radio" id="DRadio" value="4"
+											/>Group D1
+										</label>
+									</div>
+                  <div class="col-sm-2">
+										<label class="radio-inline">
+											<input name="group" type="radio" id="ERadio" value="5"
+											/>Group D2
+										</label>
+									</div>
+                  <div class="col-sm-2">
+										<label class="radio-inline">
+											<input name="group" type="radio" id="FRadio" value="6"
+											/>Group D3
+										</label>
+									</div>
+                  <div class="col-sm-2">
+										<label class="radio-inline">
+											<input name="group" type="radio" id="GRadio" value="7"
+
+											/>Group E
+										</label>
+									</div>
+                  <div class="col-sm-2">
+										<label class="radio-inline">
+											<input name="group" type="radio" id="HRadio" value="8"
+
+											/>Group F
+										</label>
+									</div>
                   </div>
           </div>
+          <button >Submit </button>
           {/* </div> */}
         </form>
       </div>
