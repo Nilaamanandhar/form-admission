@@ -417,20 +417,18 @@ export default function Register() {
             />
           </div>
           <div class="form-group">
-
             <div class="col-sm-6">
-            <TextField
-            title="Mother's Name"
-             type="text"
-             name="mothersname"
-             id="mothersname"
-             placeholder="Mother's Name"
-             class="form-control"
-             value="<?php if(isset($student_information['mothers_name'])){echo $student_information['mothers_name']; } else { echo set_value('mothersname'); } ?>"
-             autofocus
-             required
-            />
-
+              <TextField
+                title="Mother's Name"
+                type="text"
+                name="mothersname"
+                id="mothersname"
+                placeholder="Mother's Name"
+                class="form-control"
+                value="<?php if(isset($student_information['mothers_name'])){echo $student_information['mothers_name']; } else { echo set_value('mothersname'); } ?>"
+                autofocus
+                required
+              />
             </div>
             <div class="col-sm-3">
               <label for="motherLiving" className="control-label">
@@ -452,26 +450,30 @@ export default function Register() {
             </div>
           </div>
           <div class="form-group">
-          <TextField title="Mother's Occupation"  type="text"
-                name="mothersoccupation"
-                id="mothersoccupation"
-                placeholder="Mother's Occupation"
-                class="form-control"
-                value="<?php if(isset($student_information['mothers_occupation'])){echo $student_information['mothers_occupation']; } else { echo set_value('mothersoccupation'); } ?>"
-                autofocus
-                required/>
+            <TextField
+              title="Mother's Occupation"
+              type="text"
+              name="mothersoccupation"
+              id="mothersoccupation"
+              placeholder="Mother's Occupation"
+              class="form-control"
+              value="<?php if(isset($student_information['mothers_occupation'])){echo $student_information['mothers_occupation']; } else { echo set_value('mothersoccupation'); } ?>"
+              autofocus
+              required
+            />
 
-                <TextField title="Phone/Cell No"  type="phoneNumber"
-                name="motherPhoneNumber"
-                id="motherPhoneNumber"
-                placeholder="Mother Phone/Cell No"
-                class="form-control"
-                maxlength="10"
-                value="<?php if(isset($student_information['mothers_phone_no'])){echo $student_information['mothers_phone_no']; } else { echo set_value('motherPhoneNumber'); } ?>"
-                required
-                autofocus />
-
-
+            <TextField
+              title="Phone/Cell No"
+              type="phoneNumber"
+              name="motherPhoneNumber"
+              id="motherPhoneNumber"
+              placeholder="Mother Phone/Cell No"
+              class="form-control"
+              maxlength="10"
+              value="<?php if(isset($student_information['mothers_phone_no'])){echo $student_information['mothers_phone_no']; } else { echo set_value('motherPhoneNumber'); } ?>"
+              required
+              autofocus
+            />
           </div>
           <div class="form-group">
             <label for="addresspermanent" class="col-sm-3 control-label">
@@ -480,7 +482,9 @@ export default function Register() {
             <div class="col-sm-9">
               <div class="row">
                 <div class="col-sm-6">
-                <TextField title="Address (Permanent)"   type="text"
+                  <TextField
+                    title="Address (Permanent)"
+                    type="text"
                     name="permanentCity"
                     id="permanentCity"
                     placeholder="City"
@@ -488,21 +492,21 @@ export default function Register() {
                     maxlength="100"
                     value="hy"
                     required
-                    autofocus/>
-
+                    autofocus
+                  />
                 </div>
                 <div class="col-sm-4">
-                <TextField
-                  type="text"
-                  name="permanentCountry"
-                  id="permanentCountry"
-                  placeholder="Country"
-                  class="form-control"
-                  maxlength="100"
-                  value="<?php if(isset($student_information['country'])){echo $student_information['country']; } else { echo set_value('permanentCountry'); } ?>"
-                  required
-                  autofocus
-                />
+                  <TextField
+                    type="text"
+                    name="permanentCountry"
+                    id="permanentCountry"
+                    placeholder="Country"
+                    class="form-control"
+                    maxlength="100"
+                    value="<?php if(isset($student_information['country'])){echo $student_information['country']; } else { echo set_value('permanentCountry'); } ?>"
+                    required
+                    autofocus
+                  />
                 </div>
               </div>
             </div>
@@ -515,68 +519,104 @@ export default function Register() {
             <div class="col-sm-9">
               <div class="row">
                 <div class="col-sm-6">
-                  <TextField   type="text"
+                  <TextField
+                    type="text"
                     name="localCity"
                     id="localCity"
                     placeholder="City"
                     class="form-control"
                     value="<?php if(isset($student_information['local_address'])){echo $student_information['local_address']; } else { echo set_value('localCity'); } ?>"
                     maxlength="100"
-                    autofocus/>
+                    autofocus
+                  />
                 </div>
                 <div class="col-sm-4">
-                  <TextField  type="text"
+                  <TextField
+                    type="text"
                     name="localCountry"
                     id="localCountry"
                     value="<?php if(isset($student_information['local_country'])){echo $student_information['local_country']; } else { echo set_value('localCountry'); } ?>"
                     placeholder="Country"
                     class="form-control"
                     maxlength="100"
-                    autofocus/>
+                    autofocus
+                  />
                 </div>
               </div>
             </div>
           </div>
           <div class="form-group">
             <TextField
-            title="Student's Email Address
-            (Gmail Only)"   type="email"
-                id="studentemail"
-                placeholder="Gmail ID"
-                class="form-control"
-                name="studentemail"
-                value="<?php if(isset($student_information['email_address'])){echo $student_information['email_address']; } else { echo set_value('studentemail'); } ?>"
-                required
-                autofocus
-                onblur="checkEmail();"/>
+              title="Student's Email Address
+            (Gmail Only)"
+              type="email"
+              id="studentemail"
+              placeholder="Gmail ID"
+              class="form-control"
+              name="studentemail"
+              value="<?php if(isset($student_information['email_address'])){echo $student_information['email_address']; } else { echo set_value('studentemail'); } ?>"
+              required
+              autofocus
+              onblur="checkEmail();"
+            />
           </div>
           <div class="row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<label for="familyphone" class="col-sm-6 control-label"><span class="text-danger text-req">*</span>Family Phone</label>
-							<div class="col-sm-6">
-                <TextField title="* Family Phone" type="text" name="familyphone" id="familyphone" placeholder="Family Phone" class="form-control" maxlength="10" value="<?php if(isset($student_information['family_phone'])){echo $student_information['family_phone']; } else { echo set_value('familyphone'); } ?>" required autofocus/>
-
-
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-            <TextField title="Local Phone No" type="text" name="localPhoneNumber" id="localPhoneNumber" placeholder="Local Phone No" value="<?php if(isset($student_information['local_phone'])){echo $student_information['local_phone']; } else { echo set_value('localPhoneNumber'); } ?>" class="form-control" maxlength="10" required autofocus />
-						</div>
-					</div>
-				</div>
-        <div class="row">
-					<div class=" col-sm-offset-1 col-sm-11">
-						<div class="form-group">
-							<div class="col-sm-12">
-              <TextField title="With whom will you stay while attending St. Xavier's College" type="hidden" name="stayingwith" id="stayingwith" class="form-control" value="family" required autofocus/>
-
-							</div>
-						</div>
-					</div>
-				</div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="familyphone" class="col-sm-6 control-label">
+                  <span class="text-danger text-req">*</span>Family Phone
+                </label>
+                <div class="col-sm-6">
+                  <TextField
+                    title="* Family Phone"
+                    type="text"
+                    name="familyphone"
+                    id="familyphone"
+                    placeholder="Family Phone"
+                    class="form-control"
+                    maxlength="10"
+                    value="<?php if(isset($student_information['family_phone'])){echo $student_information['family_phone']; } else { echo set_value('familyphone'); } ?>"
+                    required
+                    autofocus
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <TextField
+                  title="Local Phone No"
+                  type="text"
+                  name="localPhoneNumber"
+                  id="localPhoneNumber"
+                  placeholder="Local Phone No"
+                  value="<?php if(isset($student_information['local_phone'])){echo $student_information['local_phone']; } else { echo set_value('localPhoneNumber'); } ?>"
+                  class="form-control"
+                  maxlength="10"
+                  required
+                  autofocus
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class=" col-sm-offset-1 col-sm-11">
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <TextField
+                    title="With whom will you stay while attending St. Xavier's College"
+                    type="hidden"
+                    name="stayingwith"
+                    id="stayingwith"
+                    class="form-control"
+                    value="family"
+                    required
+                    autofocus
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </form>
       </div>
     </div>
